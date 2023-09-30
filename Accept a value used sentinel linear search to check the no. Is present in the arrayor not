@@ -1,0 +1,25 @@
+#include<stdio.h>
+void sentinal(inta[100],int n)
+{
+printf("enter key");
+scanf("%d",&key);
+a[n]=key;
+i=0;
+while(a[i]!=key)
+{
+if(i==n)
+printf("not found");
+else
+printf("found at position%d",i);
+}
+
+int main()
+{
+int a[100],n,i;
+printf("enter limit");
+scanf("%d",&n);
+printf("enter %d number",n);
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+sentinal(a,n);
+}
